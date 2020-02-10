@@ -1,0 +1,163 @@
+.container-four {
+    background-color: white;
+    width: 100%;
+    height: 750px;
+    position: relative;
+    /*padding-top: 6.5vh;*/
+    text-align: center;
+}
+
+
+
+.contact-text {
+    width: 35%;/*40%;*/
+    line-height: 1.7em; 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 3vh;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+    top: 70px;
+    
+   
+}
+
+
+
+
+.form-bg-image {
+    position: absolute;
+    bottom: 0px;
+    height: 53%; /*400px*/
+    width: 550px;
+    padding: 0;
+    left: 50%;
+    margin-left: -275px;
+    
+    
+    
+    background: url(../img/iphone-mockup2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+
+
+.contact-form {
+   
+    text-align: left;
+    width: 400px;
+    position:absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 0;
+    height: 300px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    
+   
+    
+}
+
+#name, #email, textarea {
+    display: block;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    width: 95%;
+    margin: 10px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+}
+
+label {
+    font-weight: 400;
+}
+
+#name:focus, #email:focus, #message:focus {
+    border: 2px solid black;
+}
+
+#message {
+    height: 40px;
+    resize: none;
+}
+
+
+
+
+
+
+.formbtn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+    font-size: 1.3vw;
+    background-color: orange;
+    border: none;
+  
+    
+}
+
+.formbtn:hover {
+    background-color:black;
+    color: orange;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    
+    .container-four {
+        height: 650px;
+    }
+    
+    .contact-text {
+        width:76%;
+        padding-left: 55px;
+        
+       
+    }
+    
+    
+    .form-bg-image {
+        width: 400px;
+        padding: 0;
+        margin-left: -200px;
+        
+    }
+    
+    .contact-form {
+        width: 300px;
+        margin-left: -150px;
+        height: auto;
+    }
+    
+    
+    .formbtn {
+        font-size: 4vw;
+        margin-bottom: 9px;
+        
+    }
+    
+    
+    
+   .about-title {
+        font-size: 8vh;
+        left: -90px;
+        float: left;
+        display: block;
+        padding: 10px;
+        margin-top: 18vh;
+       
+    }
+    
+}

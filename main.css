@@ -1,0 +1,225 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+
+.container-one {
+    height: 100vh;
+    width: 100vw; /*100%*/
+    padding: 0;
+    margin: 0;
+    background: url(../img/bg-img-black.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+   
+   
+    
+}
+
+
+.logo {
+    height: 12vh;
+    width: 12vh;
+    float: left;
+    padding: 12px;
+ 
+    
+}
+
+.nav {
+    overflow: hidden;
+    float: right;  
+    padding-right: 14px;
+    
+    
+    
+}
+
+
+.nav ul {
+    list-style: none;
+    background: transparent;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+.nav ul li {
+    display: inline-block;
+    padding: 20px 20px 0px 20px;
+       
+}
+
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    text-transform: capitalize;
+    
+   
+}
+
+.nav ul li a:hover {
+    color:black;
+    
+}
+
+
+.toggle, .closebtn {
+    font-size: 8vh;
+    color: white;
+    display: none;
+    
+    
+    
+}
+
+
+.title {
+    color: white; 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:900;
+    text-transform: capitalize;
+    font-size: 9.5vw; /*11vh*/
+    letter-spacing: 2px;
+    position: relative;
+    top: 15px; /*140px*/
+    padding-left: 20px;
+    display: block;
+    float:left;
+    clear: both;
+    
+    
+    
+}
+
+
+
+
+
+.subtitle {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    font-size: 2vw; /*120%;*/
+    letter-spacing: 2px;
+    font-weight: 200; 
+    position: relative;
+    top: 25px; 
+    padding-left: 20px;
+    
+    
+}
+
+
+.footer {
+    background-color: black;
+    width: 100%;
+    
+    text-align: center;
+}
+
+
+.icons-container {
+    position: relative;
+   
+    
+   
+}
+
+
+.icons {
+    color: white;
+    font-size: 2vw;
+    padding: 20px;
+   
+}
+
+
+.icons:hover {
+    color: orange;
+} 
+
+
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 19vw;
+    }
+    
+    .subtitle {
+        font-size: 6vw;
+        
+    }
+    
+    
+    .toggle, .closebtn {
+        display: block;
+        cursor: pointer;
+        float: right;
+        padding: 20px 45px 0 0;
+        text-decoration: none;
+        
+    }
+    
+    .nav {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    
+    
+    .nav ul li {
+        position: relative;
+        top: 30%;
+        width: 100%;
+        text-align: left;
+        margin-top: 30px;
+        
+    }
+    
+    
+    .nav ul li a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.1s;
+       
+        
+    }
+    
+    .icons {
+        font-size: 5vw;
+    }
+    
+    
+    
+    
+    
+    
+}
+
+
+
