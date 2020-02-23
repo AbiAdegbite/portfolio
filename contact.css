@@ -1,111 +1,110 @@
 .container-four {
     background-color: white;
     width: 100%;
-    height: 750px;
     position: relative;
-    /*padding-top: 6.5vh;*/
-    text-align: center;
+    padding-top: 6.5vh;
+    padding-bottom: 6.5vh;
+    
 }
 
 
 
 .contact-text {
-    width: 35%;/*40%;*/
-    line-height: 1.7em; 
+    width: 75%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
-    font-size: 3vh;
+    font-size: 1.5vw;
     position: relative;
     margin: 0 auto;
-    text-align: left;
+    padding-top: 40px;
     display: block;
-    top: 70px;
+    
+ 
+}
+
+.form-container {
+    border: 2px solid black;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
     
    
 }
 
 
 
-
-.form-bg-image {
-    position: absolute;
-    bottom: 0px;
-    height: 53%; /*400px*/
-    width: 550px;
-    padding: 0;
-    left: 50%;
-    margin-left: -275px;
-    
-    
-    
-    background: url(../img/iphone-mockup2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-     
-}
-
-
-.contact-form {
-   
-    text-align: left;
-    width: 400px;
-    position:absolute;
-    left: 50%;
-    margin-left: -200px;
-    bottom: 0;
-    height: 300px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 200;
-    
-   
-    
-}
 
 #name, #email, textarea {
     display: block;
-    background-color: white;
+    background-color: transparent;
     border: none;
+    border-bottom: 1px solid black;
     padding: 10px;
-    width: 95%;
+    width: 75%;
     margin: 10px auto;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: black;
+   
    
 }
 
-label {
-    font-weight: 400;
+
+
+#name::placeholder, #email::placeholder, textarea::placeholder{
+    color: black;
+    font-weight: 100;
 }
 
-#name:focus, #email:focus, #message:focus {
-    border: 2px solid black;
-}
 
 #message {
-    height: 40px;
+    height: 80px;
     resize: none;
 }
 
 
 
-
-
-
 .formbtn {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     text-align: center;
-    width: 100%;
-    padding: 2px;
-    font-size: 1.3vw;
-    background-color: orange;
+    padding: 10px 50px;
+    font-size: 1.5vw;
+    background-color: black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: white;
     border: none;
+    
   
     
 }
 
+
 .formbtn:hover {
-    background-color:black;
-    color: orange;
+    background-color: orange;
+}
+
+
+
+
+
+.bold {
+    font-weight: 400; 
+    font-size: 2.3vw;
+    
+}
+
+
+
+.contact-line1 {
+    background-color: orange;
+    height: 0.1px;
+    width: 50%;
+    transform: rotate(-80deg);
+    position:relative;
+    top: -50%;
+    
 }
 
 
@@ -116,48 +115,36 @@ label {
 
 @media screen and (max-width: 500px) {
     
-    .container-four {
-        height: 650px;
-    }
+   
+  
     
     .contact-text {
-        width:76%;
-        padding-left: 55px;
+       
+        font-size: 2.4vh;
+        padding-top:20px;
+        margin: 0 auto;
         
        
     }
-    
-    
-    .form-bg-image {
-        width: 400px;
-        padding: 0;
-        margin-left: -200px;
-        
-    }
-    
-    .contact-form {
-        width: 300px;
-        margin-left: -150px;
-        height: auto;
+    .bold {
+        font-size: 3vh; 
     }
     
     
     .formbtn {
-        font-size: 4vw;
-        margin-bottom: 9px;
-        
-    }
-    
-    
-    
-   .about-title {
-        font-size: 8vh;
-        left: -90px;
-        float: left;
-        display: block;
-        padding: 10px;
-        margin-top: 18vh;
+        font-size: 2.4vh;
        
     }
+    
+    #name, #email, textarea {
+        font-size: 2.4vh;
+        
+    }
+
+    
+    
+    
+    
+
     
 }
