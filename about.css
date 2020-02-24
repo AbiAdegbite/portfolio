@@ -8,35 +8,14 @@
 
 .wrapper {
     display: flex;
-    max-width:75%; /*75%*/
-
+    max-width:75%; 
     margin:  auto;
    
    
    
 }
 
-.about-line1{
-    background-color: white;
-    height: 0.1px;
-    width: 100vw;
-    opacity: 0.2;
-    transform: rotate(10deg);
-    position:relative;
-    top: -50%;
-    
-}
 
-
-.about-line2{
-    background-color: white;
-    height: 0.1px;
-    width: 100vw;
-    opacity: 0.2;
-    transform: rotate(100deg);
-    position:relative;
-    top: 10%;
-}
 
 
 .heading {

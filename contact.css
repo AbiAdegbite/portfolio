@@ -97,16 +97,32 @@
 
 
 
-.contact-line1 {
-    background-color: orange;
-    height: 0.1px;
-    width: 50%;
-    transform: rotate(-80deg);
-    position:relative;
-    top: -50%;
-    
+
+
+
+.footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
 }
 
+
+.footer-container {
+    position: relative;
+}
+
+
+.footer-icons {
+    color: white;
+    font-size: 2vw;
+    padding: 2.5vw;
+   
+}
+
+
+.footer-icons:hover {
+    color: orange;
+} 
 
 
 
@@ -138,6 +154,11 @@
     
     #name, #email, textarea {
         font-size: 2.4vh;
+        
+    }
+    
+    .footer-icons {
+        font-size: 5vw;
         
     }
 
