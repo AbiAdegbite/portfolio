@@ -7,8 +7,6 @@ html, body{
     
 }
 
-
-
 .container-one {
     height: 100vh;
     width: 100vw; 
@@ -18,9 +16,39 @@ html, body{
     background-size: cover;
     position: relative;
     background-position: center center;
-    
-    
+}
+
+
+header {
+    width: 100%;
+}
+
+
+.menu-toggle, .close-btn{
+    display: none;
+}
+
+
+
+.navbar-links {
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:200;
+    font-size: 1.3vw;
+    padding-right: 25px;
    
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+   
+}
+
+
+.menu {
+    float: right;   
 }
 
 
@@ -28,89 +56,26 @@ html, body{
     height: 12vh; 
     float: left;
     padding: 12px;
-    padding-top: 25px;
-    
 }
-
-.nav {
-    overflow: hidden;
-    float: right;  
-    padding-right: 20px;
-    
-    
-}
-
-
-.nav ul {
-    list-style: none;
-    background: transparent;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    
-}
-
-
-
-.nav ul li {
-    display: inline-block;
-    padding: 35px 20px 0px 20px;
-    
-       
-}
-
-
-
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2vw;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 200;
-    text-transform: capitalize;
-    
-   
-}
-
-.nav ul li a:hover {
-    color:black;
-    
-}
-
-
-.toggle, .closebtn {
-    font-size: 8vh;
-    color: white;
-    display: none;
-    
-    
-    
-}
-
-
-
 
 .horizontal-line, .vertical-line {
     background-color: white;
     height: 0.1px;
-    width: 100%;
+    /*width: 100%;*/
     opacity: 0.2;
-    
 }
 
 .horizontal-line {
     position: relative;
     top: -0.5vw;
-
+    width: 100%;
 }
 
 .vertical-line {
     transform: rotate(90deg);
-    margin-right: -22.5vw;
-   
+    margin-right: -22.5vw;  
+    width: 90%;
 }
-
-
 
 
 .title {
@@ -128,11 +93,7 @@ html, body{
     clear: both;
     z-index: 2;
     overflow: hidden;
-    
 }
-
-
-
 
 
 .subtitle {
@@ -150,8 +111,7 @@ html, body{
 }
 
 
-.seemore-btn {
-    color: white;
+.see-more-btn  {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5vw;
     background-color: orange;
@@ -161,13 +121,22 @@ html, body{
     float:left;
     clear: both;
     padding: 10px 30px;
-    font-weight: 200; 
+    font-weight: 200;  
+   
     
 }
 
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
-.home-icons {
+
+
+
+
+.home-socials {
     color: white;
     font-size: 2vw;
     margin-right: 20px;
@@ -176,7 +145,6 @@ html, body{
     padding: 10px;
     text-align: center;
 }
-
 
 
 
@@ -194,29 +162,7 @@ html, body{
 }
 
 
-.footer {
-    background-color: black;
-    width: 100%;
-    text-align: center;
-}
 
-
-.icons-container {
-    position: relative;
-}
-
-
-.icons {
-    color: white;
-    font-size: 2vw;
-    padding: 20px;
-   
-}
-
-
-.icons:hover {
-    color: orange;
-} 
 
 
 
@@ -224,6 +170,67 @@ html, body{
 
 
 @media screen and (max-width: 500px) {
+    
+    
+    .menu-toggle {
+        display: block;
+        color: white;
+        font-size: 10vw;
+        float: right;
+        padding: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
+    
+
+    .navbar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;  
+    }
+    
+    
+    .menu {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .menu li {
+        display: block;
+         margin-bottom: 20px;
+    }
+    
+    
+    .navbar-links {
+        transform: 0.4s;
+        font-size: 10vw;
+       
+    }
+    
+    
+    .close-btn {
+        padding: 20px;
+        text-decoration: none;
+        font-size: 10vw;
+        display: block;
+        transition: 0.3s;
+        float: right;
+        color: white;
+        
+    }
+    
+
     .title {
         font-size: 19vw;
     }
@@ -232,62 +239,26 @@ html, body{
         font-size: 6vw;
         
     }
-    
-    
-    .toggle, .closebtn {
-        display: block;
-        cursor: pointer;
-        float: right;
-        padding: 20px 45px 0 0;
-        text-decoration: none;
-        
+
+    .right-container {
+        display: none;
     }
     
-    .nav {
-        height: 0%;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.9);
-        overflow-y: hidden;
-        transition: 0.5s;
-    }
-    
-    
-    .nav ul li {
-        position: relative;
-        top: 30%;
-        width: 100%;
-        text-align: left;
-        margin-top: 30px;
-        
-    }
-    
-    
-    .nav ul li a {
-        padding: 8px;
-        text-decoration: none;
-        font-size: 36px;
-        color: #818181;
-        display: block;
-        transition: 0.1s;
-       
-        
-    }
-    
-    .icons {
+    .see-more-btn {
         font-size: 5vw;
     }
     
     
-    
-    
-    
+
     
 }
+
+
+
+
+
+
+
 
 
 
